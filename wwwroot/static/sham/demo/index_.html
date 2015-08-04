@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>肺康复首页</title>
+	<link rel="stylesheet" href="/statics/sham/css/reset.css" />
+	<script type="text/javascript" src="/statics/sham/js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="/statics/sham/js/home.js"></script>
+    <!--banner-->
+    <script src="/statics/sham/js/jquery-ui-1.8.6.core.widget.js"></script>
+    <script src="/statics/sham/js/jqueryui.bannerize.js"></script>
+    <link rel="stylesheet" type="text/css" href="/statics/sham/css/easy-responsive-tabs.css " />
+    <script src="/statics/sham/js/easyResponsiveTabs.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#banners').bannerize({
+                shuffle: 1,
+                interval: "5"
+            });
+            $(".ui-line").hover(function(){
+                $(this).addClass("ui-line-hover");
+                $(this).find(".ui-bnnerp").addClass("ui-bnnerp-hover");
+            },function(){
+                $(this).removeClass("ui-line-hover");
+                $(this).find(".ui-bnnerp").removeClass("ui-bnnerp-hover");
+            });
+        });
+        $(document).ready(function() {
+	        //Horizontal Tab
+	        $('#parentHorizontalTab').easyResponsiveTabs({
+	            type: 'default', //Types: default, vertical, accordion
+	            width: 'auto', //auto or any width like 600px
+	            fit: true, // 100% fit in a container
+	            tabidentify: 'hor_1', // The tab groups identifier
+	            activate: function(event) { // Callback function if tab is switched
+	                var $tab = $(this);
+	                var $info = $('#nested-tabInfo');
+	                var $name = $('span', $info);
+	                $name.text($tab.text());
+	                $info.show();
+	            }
+	        });
+
+	    });
+    </script>
+    <!-- banner end -->
+</head>
+<body>
+	<div class="head">
+		<div class="top_nav">
+			<div class="block">
+				肺康复网欢迎您的来访~
+				<div class="head_r">
+					<a href="" class="login">登录</a>
+					<a href="" class="regist">注册</a>
+				</div>
+				<div class="head_rw">
+					<a href="">费医生APP</a>
+					|
+					<a href="">智能硬件</a>
+					|
+					<a href="">微信</a>
+					|
+					<a href="">微博</a>
+					|
+					<a href="">论坛</a>
+				</div>
+			</div>
+		</div>
+		<div class="head_top">
+			<a href="" class="logo">
+				<img src="/statics/sham/images/logo.jpg" alt="">
+			</a>
+			<div class="ser_n">
+				<form id="" class="" name="searchForm">
+					<span class="ipt1"><input name="" type="text" id="" placeholder="请输入您要搜索的信息" value="" class=""></span>
+					<span class="ipt2"><input type="submit" name="" class="" value=" "></span>
+				</form>
+				<dl>
+					<dt>热门搜索：</dt>
+					<dd><a href="">肺纤维化</a></dd>
+					<dd><a href=""><span>肺气肿</span></a></dd>
+					<dd><a href="">肺心病</a></dd>
+					<dd><a href="">慢阻肺</a></dd>
+				</dl>
+			</div>
+			<div class="ewm">
+				<img src="/statics/sham/images/ewm.jpg" alt="">
+			</div>
+		</div>
+		<div class="nav">
+			<div id="navList" class="navlist-wrap">
+				<div class="navlist clearfix">
+					<a href="javascript:;" class="nav_list">首页</a>
+					<a href="javascript:;" class="nav-btn" data-device="#iphoneItem">信息资讯<span>&nbsp;&nbsp;&nbsp;</span></a>
+					<a href="javascript:;" class="nav-btn" data-device="#ipadItem">医学文献<span>&nbsp;&nbsp;&nbsp;</span></a>
+					<a href="javascript:;">呼吸大讲堂</a>
+					<a href="javascript:;">在线商城</a>
+					<a href="javascript:;">照护中心</a>
+				</div>
+			</div>
+			<div class="top-nav">
+				<div id="expandZone" class="expand active">
+					<div class="download">
+
+						<div id="iphoneItem" class="item">
+							<div class="download-list">
+								<a href="">肺纤维化</a>
+								<a href="">肺气肿</a>
+								<a href="">肺心病</a>
+								<a href="">慢阴肺</a>
+								<a href="">肺纤维化</a>
+								<a href="">肺气肿</a>
+								<a href="">肺心病</a>
+								<a href="">肺纤维化</a>
+								<a href="">肺心病</a>
+								<a href="">慢阴肺</a>
+								<a href="">肺纤维化</a>
+								<a href="">肺气肿</a>
+		
+							</div>
+						</div>
+						<div id="ipadItem" class="item">
+							<div class="download-list">
+								<a href="">慢阴肺</a>
+								<a href="">肺纤维化</a>
+								<a href="">肺气肿</a>
+								<a href="">肺心病</a>
+								<a href="">肺纤维化</a>
+								<a href="">慢阴肺</a>
+								<a href="">肺纤维化</a>
+							
+							</div>
+						</div>
+	
+					</div>
+					<div id="closeBtn" class="close-btn"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="con">
+
+		<div class="warrper">
+			<!--content-->
+			<div class="content">
+			   <!--企业动态-->
+			   <div class="index-new w1200 mt30">
+			       <div class="indexadd mt50 mb60">
+			           <div id="banners" class="ui-banner">
+			               <ul class="ui-banner-slides">
+			                   <li><a href=""><img src="/statics/sham/images/simgd.jpg" alt="NEW! Get Heart Smart With Essential Omega III" title="NEW! Get Heart Smart With Essential Omega III"/></a></li>
+			                   <li><a href=""><img src="/statics/sham/images/simgd.jpg" alt="NEW! Support Your Skin on a Cellular Level" title="NEW! Support Your Skin on a Cellular Level"/></a></li>
+			                   <li><a href=""><img src="/statics/sham/images/simgd.jpg" alt="NEW! Indulge in Luxury With Royal Spa" title="NEW! Indulge in Luxury With Royal Spa"/></a></li>
+			                   <li><a href=""><img src="/statics/sham/images/simgd.jpg" alt="NEW! Get paid to shop with Cashback" title="NEW! Get paid to shop with Cashback"/></a></li>
+			                   <li><a href=""><img src="/statics/sham/images/simgd.jpg" alt="NEW! Radiation Protection at its Best" title="NEW! Radiation Protection at its Best"/></a></li>
+			               </ul><!--ui-banner-slides end-->
+			               <div class="banner_r">
+			               		<h2>最新更新</h2>
+			                   	<ul class="ui-banner-slogans">
+			                       <li class="ui-line">
+			                           <div class="ullinehover">
+			                               <div class="ui-bnnerimg floatLeft">
+			                               		<a href="">
+			                               			<img src="/statics/sham/images/simg.jpg" alt="" width="103"/>
+			                               		</a>
+			                               </div>
+			                               <div class="ui-bnnerp floatRight">
+			                                   <h3>设计院开展扶贫济困募捐活动</h3>
+			                                   <p>
+			                                   在医学上，皮肤病是有关皮肤的疾病
+			                                   <a>[详情]</a>
+			                                   </p>
+			                               </div>
+			                           </div>
+			                       </li>
+			                       <li class="ui-line">
+			                           <div class="ullinehover">
+			                               <div class="ui-bnnerimg floatLeft">
+			                               		<a href="">
+			                               			<img src="/statics/sham/images/simg.jpg" alt="" width="103"/>
+			                               		</a>
+			                               </div>
+			                               <div class="ui-bnnerp floatRight">
+			                                   <h3>设计院开展扶贫济困募捐活动</h3>
+			                                   <p>
+			                                   在医学上，皮肤病是有关皮肤的疾病
+			                                   <a>[详情]</a>
+			                                   </p>
+			                               </div>
+			                           </div>
+			                       </li>
+			                       <li class="ui-line">
+			                           <div class="ullinehover">
+			                               <div class="ui-bnnerimg floatLeft">
+			                               		<a href="">
+			                               			<img src="/statics/sham/images/simg.jpg" alt="" width="103"/>
+			                               		</a>
+			                               </div>
+			                               <div class="ui-bnnerp floatRight">
+			                                   <h3>设计院开展扶贫济困募捐活动</h3>
+			                                   <p>
+			                                   在医学上，皮肤病是有关皮肤的疾病
+			                                   <a>[详情]</a>
+			                                   </p>
+			                               </div>
+			                           </div>
+			                       </li>
+			                       <li class="ui-line">
+			                           <div class="ullinehover">
+			                               <div class="ui-bnnerimg floatLeft">
+			                               		<a href="">
+			                               			<img src="/statics/sham/images/simg.jpg" alt="" width="103"/>
+			                               		</a>
+			                               </div>
+			                               <div class="ui-bnnerp floatRight">
+			                                   <h3>设计院开展扶贫济困募捐活动</h3>
+			                                   <p>
+			                                   在医学上，皮肤病是有关皮肤的疾病
+			                                   <a>[详情]</a>
+			                                   </p>
+			                               </div>
+			                           </div>
+			                       </li>
+			                       <li class="ui-line">
+			                           <div class="ullinehover">
+			                               <div class="ui-bnnerimg floatLeft">
+			                               		<a href="">
+			                               			<img src="/statics/sham/images/simg.jpg" alt="" width="103"/>
+			                               		</a>
+			                               </div>
+			                               <div class="ui-bnnerp floatRight">
+			                                   <h3>设计院开展扶贫济困募捐活动</h3>
+			                                   <p>
+			                                   在医学上，皮肤病是有关皮肤的疾病
+			                                   <a>[详情]</a>
+			                                   </p>
+			                               </div>
+			                           </div>
+			                       </li>
+			                   </ul><!--ui-banner-slogans end-->
+			               </div>
+			               
+			           </div>
+			       </div>
+			   </div>
+			   <!--企业动态 end-->
+			</div>
+			<!--content end-->
+	   </div>
+	   <div class="wrap_con">
+	   		<div class="wrap_con_l">
+				<div id="parentHorizontalTab">
+					<div class="tit_wc">
+						<h2 class="wc_tit">信息咨询</h2>
+			            <ul class="resp-tabs-list hor_1">
+			                <li>小儿哮喘&nbsp;&nbsp;|</li>
+			                <li>&nbsp;&nbsp;慢阻肺&nbsp;&nbsp;|</li>
+			                <li>&nbsp;&nbsp;鼾症</li>
+			            </ul>
+			            <a href="" class="more">更多</a>
+					</div>
+					
+		            <div class="resp-tabs-container hor_1">
+		            	<div>
+		            		<dl>
+			                	<dt>
+			                		<img src="/statics/sham/images/tab1.jpg" alt="">
+			                	</dt>
+			                	<dd>
+			                		<a href=""><span class="hot">1</span>人社部：养老基金投资资金规模约2万多亿</a></dd>
+			                	<dd><a href=""><span class="hot">2</span>教育部谈清华北大招生骂战：禁恶性抢生源</a></dd> 
+								<dd><a href=""><span class="hot">3</span>湖北原副省长郭有明被控受贿2380万 庭审微笑</a></dd>
+								<dd><a href=""><span>4</span>教育部谈清华北大招生骂战：禁恶性抢生源</a></dd> 
+								<dd><a href=""><span>5</span>湖北原副省长郭有明被控受贿2380万 庭审微笑</a></dd>
+			                </dl>
+		            	</div>
+		                
+		                <div>
+		                    <dl>
+			                	<dt>
+			                		<img src="/statics/sham/images/tab1.jpg" alt="">
+			                	</dt>
+			                	<dd>
+			                		<a href=""><span class="hot">1</span>慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺</a>
+			                		</dd>
+			                	<dd>
+			                		<a href=""><span class="hot">2</span>慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺</a>
+			                	</dd> 
+								<dd>
+									<a href=""><span class="hot">3</span>慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺 庭审微笑</a>
+								</dd>
+								<dd>
+									<a href=""><span>4</span>慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺</a>
+								</dd> 
+								<dd>
+									<a href=""><span>5</span>慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺慢阻肺 庭审微笑</a>
+								</dd>
+			                </dl>
+		                </div>
+		                <div>
+		                    <dl>
+			                	<dt>
+			                		<img src="/statics/sham/images/tab1.jpg" alt="">
+			                	</dt>
+			                	<dd>
+			                		<a href=""><span class="hot">1</span>鼾症鼾症鼾症鼾症鼾症鼾症鼾症鼾症</a>
+			                		</dd>
+			                	<dd>
+			                		<a href=""><span class="hot">2</span>鼾症鼾症鼾症鼾症鼾症</a>
+			                	</dd> 
+								<dd>
+									<a href=""><span class="hot">3</span>鼾症鼾症鼾症鼾症鼾症 庭审微笑</a>
+								</dd>
+								<dd>
+									<a href=""><span>4</span>鼾症鼾症鼾症</a>
+								</dd> 
+								<dd>
+									<a href=""><span>5</span>鼾症鼾症鼾症鼾症鼾症鼾症鼾症鼾症鼾症 庭审微笑</a>
+								</dd>
+			                </dl>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="hots">
+		        	<div class="tit_wc">
+		        		<h2 class="wc_tit wc_tit3">热点专题</h2>
+			        	<a href="" class="more">更多</a>
+			        	
+		        	</div>
+		        	<div class="hot_con">
+		        		<dl>
+							<dt><img src="/statics/sham/images/hot1.jpg" alt=""></dt>
+							<dd><h3><a href="">人社部：养老基金投资...</a></h3></dd>
+							<dd>在医学上，皮肤病是有关皮肤的疾病在医学上，皮肤病是有关皮肤的疾病在医学上  <a href="">[详情]</a></dd>
+						</dl>
+						<dl>
+							<dt><img src="/statics/sham/images/hot1.jpg" alt=""></dt>
+							<dd><h3><a href="">人社部：养老基金投资...</a></h3></dd>
+							<dd>在医学上，皮肤病是有关皮肤的疾病在医学上，皮肤病是有关皮肤的疾病在医学上  <a href="">[详情]</a></dd>
+						</dl>
+						<img src="/statics/sham/images/hot2.jpg" alt="" class="hotbanner">
+		        	</div>
+					
+		        </div>
+   			</div>
+   			<div class="wrap_con_r">
+   				<div class="classroom">
+   					<div class="tit_wc">
+   						<h2 class="wc_tit wc_tit2">呼吸大讲堂</h2>
+   						<a href="" class="more">更多</a>
+   					</div>
+   					<div class="video_con">
+   						<dl>
+   							<dt>
+   								<a href="">
+   									<img src="/statics/sham/images/hot1.jpg" alt="">
+   									<p>因不忍心杀害陌生人</p>
+   								</a>
+   							</dt>
+   							<dd>
+   								<a href="">
+   									难治性哮喘的诊断与
+   								</a>
+   							</dd>
+   							<dd>
+   								<span>26.5万</span>
+   							</dd>
+   						</dl>
+   						<dl>
+   							<dt>
+   								<a href="">
+   									<img src="/statics/sham/images/hot1.jpg" alt="">
+   									<p>因不忍心杀害陌生人</p>
+   								</a>
+   							</dt>
+   							<dd>
+   								<a href="">
+   									难治性哮喘的诊断与
+   								</a>
+   							</dd>
+   							<dd>
+   								<span>26.5万</span>
+   							</dd>
+   						</dl>
+   						<dl>
+   							<dt>
+   								<a href="">
+   									<img src="/statics/sham/images/hot1.jpg" alt="">
+   									<p>因不忍心杀害陌生人</p>
+   								</a>
+   							</dt>
+   							<dd>
+   								<a href="">
+   									难治性哮喘的诊断与
+   								</a>
+   							</dd>
+   							<dd>
+   								<span>26.5万</span>
+   							</dd>
+   						</dl>
+   						<dl>
+   							<dt>
+   								<a href="">
+   									<img src="/statics/sham/images/hot1.jpg" alt="">
+   									<p>因不忍心杀害陌生人</p>
+   								</a>
+   							</dt>
+   							<dd>
+   								<a href="">
+   									难治性哮喘的诊断与
+   								</a>
+   							</dd>
+   							<dd>
+   								<span>26.5万</span>
+   							</dd>
+   						</dl>
+   					</div>
+   					
+   				</div>
+   				<div class="wrap_jk">
+   					<div class="tit_wc">
+   						<h2 class="wc_tit wc_tit4">健康自测</h2>
+   						<a href="" class="more">更多</a>
+   					</div>
+   					<div class="tabpic">
+   						<img src="/statics/sham/images/renti1.jpg" alt="">
+   						<img src="/statics/sham/images/renti2.jpg" alt="">
+   						<div class="jk_btn">
+   							<button class="active">正面</button>
+   							<button>反面</button>
+   						</div>
+   						
+   					</div>
+   				</div>
+   			</div>
+	   </div>
+
+	</div>
+	<div class="foot">
+		<div class="ft_t">
+			<div class="ft_rl">
+				<dl>
+					<dt>关于肺康复网</dt>
+					<dd><a href="">关于我们</a></dd>
+					<dd><a href="">网站帮助</a></dd>
+					<dd><a href="">隐私政策</a></dd>
+					<dd><a href="">投稿通道</a></dd>
+				</dl>
+				<dl class="ltan">
+					<dt>肺康复论坛</dt>
+					<dd><a href="">联系我们</a></dd>
+					<dd><a href="">网站地图</a></dd>
+					<dd><a href="">版权声明</a></dd>
+					<dd><a href="">意见反馈</a></dd>
+				</dl>
+			</div>
+			<div class="ft_tr">
+				<a href="">
+					<img src="/statics/sham/images/ewm1.jpg" alt="">
+					<h3>肺康复网论坛</h3>
+				</a>
+				<a href="">
+					<img src="/statics/sham/images/ewm2.jpg" alt="">
+					<h3>呼吸大讲堂</h3>
+				</a>
+				<a href="">
+					<img src="/statics/sham/images/ewm3.jpg" alt="">
+					<h3>费医生APP</h3>
+				</a>
+			</div>
+		</div>
+		<div class="ft_b">
+			<div class="ft_info">
+				<span>友情链接：</span>
+				<a href="">肺康复网</a>
+				<a href="">肺康复网</a>
+				<a href="">肺康复网</a>
+				<a href="">肺康复网</a>
+				<a href="">肺康复网</a>
+				<a href="">肺康复网</a>
+				<a href="">肺康复网</a>
+				<a href="">肺康复网</a>
+				<a href="">肺康复网</a>
+			</div>
+			<p>声明：本站图/文均来自于网络收集，仅供病友参考，不作为医疗诊断依据。      投诉电话：400-000-0000（7×24小时）</p>
+			<p>Copyright ⓒ 2015-2018 肺康复网（www.feikangfu.com）京ICP备1345561号-1</p>
+			<p>互联网nag药品信息服务资格证书ICP证书</p>
+		</div>
+	</div>
+</body>
+</html>
